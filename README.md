@@ -1,4 +1,6 @@
-# FasciolaVision
+# Fasciola-Vision
+
+Fasciolisis Diagnostic.
 
 Next.js (App Router) + TypeScript + Tailwind CSS v4.
 
