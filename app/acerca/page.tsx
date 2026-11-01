@@ -4,21 +4,36 @@ import { Card, PageHead } from "@/components/ui";
 export const metadata: Metadata = { title: "Acerca de" };
 
 const items = [
-  ["Misión", "Hacer más rápido, accesible y reproducible el diagnóstico de fasciolisis, apoyando el criterio de los profesionales."],
-  ["Enfoque", "Modelos entrenados con muestras anotadas por especialistas y validados contra los métodos de referencia del laboratorio."],
-  ["Transparencia", "Cada resultado muestra su nivel de confianza y puede ser revisado por una persona antes de tomar decisiones."],
+  ["El reto", "Los métodos parasitológicos requieren observación experta. Algunos huevos, como los de Fasciola y Paramphistomum, pueden parecerse."],
+  ["La propuesta", "Explorar un clip-on para microscopio y un flujo de visión por computadora para capturar y estudiar imágenes de muestras."],
+  ["El principio", "La automatización no debe confundirse con un diagnóstico. La revisión profesional y la validación científica son indispensables."],
 ];
 
 export default function Acerca() {
   return (
     <>
-      <PageHead title="Acerca de">FasciolaVision es un proyecto que aplica visión por computadora al diagnóstico parasitológico veterinario, desde Uruguay.</PageHead>
-      <div className="mx-auto max-w-6xl px-6 pb-16 pt-6">
-        <div className="grid gap-4 md:grid-cols-3">
-          {items.map(([t, d]) => <Card key={t}><h3 className="text-lg font-semibold text-prim">{t}</h3><p className="mt-1.5 text-mute">{d}</p></Card>)}
+      <PageHead title="Una idea para mirar de otra manera.">
+        FasciolaVision es una propuesta de hackathon nacida en Uruguay. Explora el encuentro entre microscopía accesible, visión por computadora y parasitología.
+      </PageHead>
+      <div className="mx-auto max-w-7xl px-6 pb-16 pt-8 sm:px-10">
+        <div className="grid gap-px border border-line bg-line md:grid-cols-3">
+          {items.map(([t, d], index) => (
+            <Card key={t} className="border-0 shadow-none">
+              <span className="micro-label text-terracotta">0{index + 1} / PRINCIPIO</span>
+              <h3 className="mt-7 text-xl font-medium tracking-tight text-ink">{t}</h3>
+              <p className="mt-2 leading-6 text-mute">{d}</p>
+            </Card>
+          ))}
         </div>
-        <div className="mt-6 rounded-xl border border-l-4 border-line border-l-sec bg-white p-5 text-[15px] text-mute">
-          <b className="text-prim">Estado del proyecto:</b> prototipo en desarrollo. Aún no está validado clínicamente ni certificado como producto de diagnóstico.
+        <div className="mt-8 grid gap-6 border-t border-line pt-6 md:grid-cols-[.6fr_1.4fr]">
+          <p className="micro-label text-terracotta">ESTADO / 2026</p>
+          <div className="max-w-3xl">
+            <h2 className="text-2xl font-medium tracking-tight text-ink">Prototipo conceptual en desarrollo.</h2>
+            <p className="mt-3 leading-7 text-mute">
+              Este sitio presenta una idea, no un servicio clínico. No existe aquí un detector conectado, un clasificador funcional ni un proceso de validación.
+              Los ejemplos visuales son esquemáticos y no deben utilizarse para tomar decisiones de salud animal o humana.
+            </p>
+          </div>
         </div>
       </div>
     </>
