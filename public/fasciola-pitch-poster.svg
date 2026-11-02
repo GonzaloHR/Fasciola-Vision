@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1560" viewBox="0 0 720 1560">
+  <defs>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#17231d" stroke-opacity=".09"/>
+    </pattern>
+    <radialGradient id="field">
+      <stop offset="0" stop-color="#c9ee72" stop-opacity=".48"/>
+      <stop offset="1" stop-color="#c9ee72" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="720" height="1560" fill="#f3f2e9"/>
+  <rect width="720" height="1560" fill="url(#grid)"/>
+  <path d="M45 45h630v1470H45z" fill="none" stroke="#17231d" stroke-opacity=".18"/>
+  <text x="78" y="104" fill="#17231d" font-family="monospace" font-size="17" letter-spacing="4">FASCIOLAVISION / HACKATHON</text>
+  <text x="642" y="104" fill="#bb5c40" font-family="monospace" font-size="17" text-anchor="end">01:25</text>
+  <circle cx="360" cy="650" r="240" fill="url(#field)"/>
+  <circle cx="360" cy="650" r="195" fill="none" stroke="#17231d" stroke-opacity=".7" stroke-width="2"/>
+  <circle cx="360" cy="650" r="158" fill="none" stroke="#17231d" stroke-opacity=".22" stroke-width="2" stroke-dasharray="4 12"/>
+  <path d="M360 429v40m0 362v40m-221-221h40m362 0h40" stroke="#bb5c40" stroke-width="3"/>
+  <g transform="rotate(-18 360 650)">
+    <ellipse cx="360" cy="650" rx="67" ry="104" fill="#c47d50" fill-opacity=".72" stroke="#8f5036" stroke-width="4"/>
+    <ellipse cx="360" cy="650" rx="55" ry="90" fill="none" stroke="#f5d4a9" stroke-opacity=".8" stroke-width="3"/>
+    <path d="M325 609c18-21 41-29 65-27" fill="none" stroke="#fff1d4" stroke-linecap="round" stroke-width="7"/>
+  </g>
+  <path d="m407 565 114-107" fill="none" stroke="#bb5c40" stroke-width="2" stroke-dasharray="7 8"/>
+  <circle cx="407" cy="565" r="6" fill="#bb5c40"/>
+  <text x="520" y="443" fill="#17231d" font-family="monospace" font-size="12" letter-spacing="2">CAMPO DE ESTUDIO</text>
+  <text x="78" y="1050" fill="#bb5c40" font-family="monospace" font-size="18" letter-spacing="5">MICROSCOPÍA / VISIÓN / CIENCIA</text>
+  <text x="72" y="1178" fill="#17231d" font-family="Arial, sans-serif" font-size="106" font-weight="700" letter-spacing="-8">Del microscopio</text>
+  <text x="72" y="1290" fill="#17231d" font-family="Arial, sans-serif" font-size="106" font-weight="700" letter-spacing="-8">al <tspan fill="#bb5c40" font-style="italic">pixel.</tspan></text>
+  <path d="M78 1360h564" stroke="#17231d" stroke-opacity=".24"/>
+  <text x="78" y="1412" fill="#17231d" font-family="monospace" font-size="14" letter-spacing="3">IDEA CONCEPTUAL · NO DIAGNÓSTICA</text>
+</svg>
